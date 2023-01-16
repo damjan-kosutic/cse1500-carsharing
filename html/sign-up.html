@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sign_up.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="leftpart">
+            <div class="title-container">
+                <h1 class="welcome_message">
+                    Sign up!
+                </h1>
+            </div>
+            <div class="img-wrapper">
+                <!-- <img src="../images/Open Peeps - Avatar.png" alt="Welcome image by Pablo Stanley" style="height: 30%;"> -->
+                <img src="../images/Open Peeps - Avatar-SignUp.png" alt="Welcome image by Pablo Stanley">
+            </div>
+        </div>
+
+
+        <div class="rightpart">
+
+            <div class="formcont">
+                <form action="./home.html" id="loginform">
+
+                    <label for="Username">Username:</label><br>
+                    <input type="text" id="Username" name="Username" class="inputs" required><br>
+
+                    <label for="Password">Password:</label><br>
+                    <input type="text" id="Password" name="Password" class="inputs" required><br>
+
+                    <label for="RepeatPassword">Repeat password:</label><br>
+                    <input type="text" id="RepeatPassword" name="RepeatPassword" class="inputs" required><br>
+
+                    <label for="Name">Name:</label><br>
+                    <input type="text" id="Name" name="Name" class="inputs" required><br>
+
+                    <label for="Address">Address:</label><br>
+                    <input type="text" id="Address" name="Address" class="inputs"><br>
+
+                    <label for="Country">Country:</label><br>
+                    <input type="Country" id="Country" name="Country" class="inputs" required><br>
+
+                    <label for="ZipCode">Zip Code:</label><br>
+                    <input type="text" id="ZipCode" name="ZipCode" class="inputs"><br>
+
+                    <label for="Email">Email:</label><br>
+                    <input type="email" id="Email" name="Email" class="inputs" required><br>
+
+                    <label for="Sex">Sex:</label><br>
+                    <input type="radio" name="Sex" value="Male"> M </br>
+                    <input type="radio" name="Sex" value="Female"> F </br>
+                    <input type="radio" name="Sex" value="Prefer" checked> Prefer not to say </br>
+
+                    <label for="Language">Language:</label><br>
+                    <input type="text" id="Language" name="Language" class="inputs"><br>
+
+                    <label for="About">About:</label><br>
+                    <textarea name="About" rows="3" cols="35" class="inputs"></textarea><br>
+
+                    <label for="IsDriver">Driver?</label>
+                    <input type="checkbox" id="IsDriver" name="IsDriver">
+
+
+                    <hr style="color:#caf0f8">
+
+                </form>
+                <div class="buttons">
+                    <button type="submit" form="loginform" value="Submit" class="submitbutton">Sign up</button>
+                    <a href="../index.html"><button>Back</button></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
