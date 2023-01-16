@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    min-width: 100%;
+    
+}
+.leftpart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    background-image: linear-gradient(to bottom right, green, yellow);
+    color: white;
+    text-align: center;   
+}
+
+.title-container {
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    /* text-shadow: 0 0 5px black; */
+}
+
+.welcome_message {
+    -webkit-text-stroke: 3px #000;
+    max-height: fit-content;
+    font-size: 70;
+    margin: 0;
+}
+
+.new-message {
+    max-height: fit-content;
+    text-decoration: none;
+    margin: 0;
+}
+
+.img-wrapper {
+    position: absolute;
+    min-width: 100%;
+    z-index: 0;
+}
+
+img {
+    margin: 0 auto;
+}
+
+.newUserLink {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.newUserLink:hover {
+    color: yellow;
+    text-decoration: underline;
+ 
+}
+
+/* .img-wrapper {
+    padding-top: 60%;
+    
+    size: 20%;
+} */
+
+.rightpart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    
+}
+
+.formcont {
+    text-align: center;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.877);
+    border-color: #000;
+    border-radius: 15px;
+    font-size: 30;
+    transition: 0.4s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: rgba(0, 81, 255, 0.835) solid 2px;
+}
