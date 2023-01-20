@@ -72,12 +72,27 @@ img {
 .inputs{
     background-color: rgba(148, 148, 148, 0.082);
     transition: 0.3s;
+    border: black 2px solid;
 }
 
 .inputs:hover{
     opacity: 0.5;
-    background-color:rgba(255, 100, 100, 0.322);
+    background-color:rgba(255, 0, 0, 0.595);
     border: transparent solid 2px;
+}
+
+input:valid,
+input:in-range {  
+  border-color: green;
+}
+
+input:valid:hover,
+input:in-range:hover {
+    background-color: rgba(0, 128, 0, 0.47);
+}
+input:invalid,
+input:out-of-range {
+  border-color: red;  
 }
 
 textarea.inputs:hover {

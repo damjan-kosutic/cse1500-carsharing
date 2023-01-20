@@ -31,9 +31,9 @@
             <div class="formcont">
                 <form action="./html/home.html" id="loginform">
                     <label for="Username">Username:</label><br>
-                    <input type="text" id="Username" name="Username" required><br>
+                    <input type="text" id="Username" name="Username" required minlength="5" maxlength="12"><br>
                     <label for="Password">Password:</label><br>
-                    <input type="password" id="Password" name="Password" required>
+                    <input type="password" id="Password" name="Password" required minlength="12">
                     <hr style="color:#caf0f8">
                     <button type="submit" form="loginform" value="Submit"class="submitbutton">Login</button> 
                 </form>

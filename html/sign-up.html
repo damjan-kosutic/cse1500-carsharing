@@ -30,13 +30,13 @@
                 <form action="./home.html" id="loginform">
 
                     <label for="Username">Username:</label><br>
-                    <input type="text" id="Username" name="Username" class="inputs" required><br>
+                    <input type="text" id="Username" name="Username" class="inputs" required minlength="5" maxlength="12" title="hey igna has a small d"><br>
 
                     <label for="Password">Password:</label><br>
-                    <input type="text" id="Password" name="Password" class="inputs" required><br>
+                    <input type="text" id="Password" name="Password" class="inputs" required minlength="12"><br>
 
                     <label for="RepeatPassword">Repeat password:</label><br>
-                    <input type="text" id="RepeatPassword" name="RepeatPassword" class="inputs" required><br>
+                    <input type="text" id="RepeatPassword" name="RepeatPassword" class="inputs" required minlength="12"><br>
 
                     <label for="Name">Name:</label><br>
                     <input type="text" id="Name" name="Name" class="inputs" required><br>
@@ -48,7 +48,7 @@
                     <input type="Country" id="Country" name="Country" class="inputs" required><br>
 
                     <label for="ZipCode">Zip Code:</label><br>
-                    <input type="text" id="ZipCode" name="ZipCode" class="inputs"><br>
+                    <input type="text" id="ZipCode" name="ZipCode" class="inputs" minlength="6" maxlength="6"><br>
 
                     <label for="Email">Email:</label><br>
                     <input type="email" id="Email" name="Email" class="inputs" required><br>
@@ -59,10 +59,10 @@
                     <input type="radio" name="Sex" value="Prefer" checked> Prefer not to say </br>
 
                     <label for="Language">Language:</label><br>
-                    <input type="text" id="Language" name="Language" class="inputs"><br>
+                    <input type="text" id="Language" name="Language" class="inputs" required><br>
 
                     <label for="About">About:</label><br>
-                    <textarea name="About" rows="3" cols="35" class="inputs"></textarea><br>
+                    <textarea name="About" id="About" rows="3" cols="35" class="inputs"></textarea><br>
 
                     <label for="IsDriver">Driver?</label>
                     <input type="checkbox" id="IsDriver" name="IsDriver">
