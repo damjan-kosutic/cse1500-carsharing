@@ -1,0 +1,3 @@
+#Ignores internal files for macOS
+.DS_Store
+
