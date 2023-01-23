@@ -30,28 +30,41 @@
                 <form action="" id="loginform">
                     
                     <label for="Username">Username:</label><br>
-                    <input type="text" id="Username" name="Username" class="inputs" required minlength="5" maxlength="12" title=""><br>
+                    <input type="text" id="Username" name="Username" class="inputs" required  
+                        title="Use a capital letter at the start and a number or special 
+character at the end. Use between 5 and 12 characters"
+                        pattern="^[A-Z][A-Za-z\d$@$!%#?&]{4,11}[\d$@$!%#?&]$"
+                        placeholder="Ex. Bestdriver!"><br>
                     
                     <label for="Password">Password:</label><br>
-                    <input type="text" id="Password" name="Password" class="inputs" required minlength="12"><br>
+                    <input type="password" id="Password" name="Password" class="inputs" required minlength="12" 
+                        title="Use a combination of at least 12 uppercase and lowercase letters, symbols and numbers"
+                        placeholder="Use a strong password!"><br>
                     
                     <label for="RepeatPassword">Repeat password:</label><br>
-                    <input type="text" id="RepeatPassword" name="RepeatPassword" class="inputs" required minlength="12"><br>
+                    <input type="password" id="RepeatPassword" name="RepeatPassword" class="inputs" required minlength="12"
+                        title="Repeat your password, make sure they are the same"
+                        placeholder="Use the same password"><br>
                     
                     <label for="Name">Name:</label><br>
-                    <input type="text" id="Name" name="Name" class="inputs" required><br>
+                    <input type="text" id="Name" name="Name" class="inputs" required pattern="^[A-Z][a-z]$"
+                        title="Your name (Starting with a capital letter)" placeholder="Ex. Mario"><br>
                     
                     <label for="Address">Address:</label><br>
-                    <input type="text" id="Address" name="Address" class="inputs"><br>
+                    <input type="text" id="Address" name="Address" class="inputs" placeholder="Optional field"><br>
                     
                     <label for="Country">Country:</label><br>
-                    <input type="Country" id="Country" name="Country" class="inputs" required><br>
+                    <input type="Country" id="Country" name="Country" class="inputs" required placeholder="Ex. Norway"
+                        pattern="^[A-Z][A-Za-z\s]$"><br>
                     
                     <label for="ZipCode">Zip Code:</label><br>
-                    <input type="text" id="ZipCode" name="ZipCode" class="inputs" minlength="6" maxlength="6"><br>
+                    <input type="text" id="ZipCode" name="ZipCode" class="inputs" minlength="6" maxlength="6"
+                        pattern="^[1-9]{4}[A-Za-z]{2}$" title="Enter a valid Dutch zipcode number" placeholder="XXXXAA"><br>
                     
                     <label for="Email">Email:</label><br>
-                    <input type="email" id="Email" name="Email" class="inputs" required><br>
+                    <input type="email" id="Email" name="Email" class="inputs" required
+                        pattern="^[A-Za-z]+[@][A-Za-z]+[/.][A-Za-z]+$" placeholder="Your Email address"
+                        title="Please enter the full email ID. Ex. yourname@gmail.com"><br>
                     
                     <label for="Sex">Sex:</label><br>
                     <input type="radio" name="Sex" value="Male"> M </br>
@@ -59,13 +72,13 @@
                     <input type="radio" name="Sex" value="Prefer" checked> Prefer not to say </br>
                     
                     <label for="Language">Language:</label><br>
-                    <input type="text" id="Language" name="Language" class="inputs" required><br>
+                    <input type="text" id="Language" name="Language" class="inputs" required placeholder="Ex. Italian"><br>
                     
                     <label for="About">About:</label><br>
-                    <textarea name="About" id="About" rows="3" cols="35" class="inputs"></textarea><br>
+                    <textarea name="About" id="About" rows="3" cols="35" class="inputs" placeholder="About yourself, optional field"></textarea><br>
                     
                     <label for="IsDriver">Driver?</label>
-                    <input type="checkbox" id="IsDriver" name="IsDriver">
+                    <input type="checkbox" id="IsDriver" name="IsDriver" title="Mark the box if you are a driver">
                     
                     
                     <hr style="color:#caf0f8">
