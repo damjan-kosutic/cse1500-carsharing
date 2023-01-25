@@ -69,6 +69,13 @@ img {
     text-align: center;
 }
 
+#loginform {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
 .inputs{
     background-color: rgba(148, 148, 148, 0.082);
     transition: 0.3s;
@@ -97,6 +104,17 @@ input:out-of-range {
 
 textarea.inputs:hover {
     border-width: 1px;
+}
+
+.error {
+    text-align: left;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+}
+
+hr {
+    min-width: 100%;
 }
 
 button {
