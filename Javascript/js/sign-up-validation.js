@@ -78,13 +78,13 @@ function zipChecker(string) {
     if (string.length() != 6) return false;
 
     for (let i = 0 ; i < 4; i++) {
-        if (!/^[0-9]$/.test(string.charAt(i))) {
+        if (isNaN(string.charAt(i))) {
             return false;
         }
     }
 
     for (let i = 4 ; i < 6; i++) {
-        if (!abcCheck.test(charAt(i))) {
+        if (!isNaN(string.charAt(i))) {
             return false;
         }
     }
