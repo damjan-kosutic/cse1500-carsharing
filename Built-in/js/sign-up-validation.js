@@ -11,11 +11,7 @@ var language = document.getElementById("Language");
 var about = document.getElementById("About");
 var isDriver = document.getElementById("IsDriver");
 
-username.onload = function() {
-    if(!username.checkValidity()) {
-        alert("hEy Ignacio has a small d")
-    }
-}
+
 
 
 
